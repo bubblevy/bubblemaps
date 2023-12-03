@@ -1,0 +1,1374 @@
+<!DOCTYPE html>
+<html lang="id" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="BubbleMaps adalah platform online yang menyajikan informasi tempat wisata terbaik di Indonesia."
+    />
+    <meta
+      name="keywords"
+      content="BubbleMaps, Tempat Wisata, Template Tempat Wisata, Bubblevy"
+    />
+    <link
+      rel="shortcut icon"
+      href="app/assets/img/favicon.ico"
+      type="image/x-icon"
+    />
+    <title>BubbleMaps</title>
+    <script
+      src="https://code.jquery.com/jquery-3.6.4.min.js"
+      integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8="
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,700;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="theme-color" content="#ffffff" />
+    <link href="app/assets/css/theme.css" rel="stylesheet" />
+    <link href="app/assets/css/style.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.3/dist/sweetalert2.min.css"
+    />
+  </head>
+
+  <body>
+    <main class="main" id="top">
+      <nav
+        class="navbar navbar-expand-lg navbar-light fixed-top py-5 d-block"
+        data-navbar-on-scroll="data-navbar-on-scroll"
+      >
+        <div class="container">
+          <a class="navbar-brand mt-2" href="index.html"
+            ><img src="app/assets/img/NewLogo.png" height="50" alt="logo"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"> </span>
+          </button>
+          <div
+            class="collapse navbar-collapse border-top border-lg-0 mt-4 mt-lg-0"
+            id="navbarSupportedContent"
+          >
+            <ul
+              class="navbar-nav ms-auto pt-2 pt-lg-0 font-base align-items-lg-center align-items-start"
+            >
+              <li class="nav-item px-3 px-xl-4">
+                <a
+                  class="nav-link fw-medium"
+                  aria-current="page"
+                  href="#"
+                  data-toggle="tooltip"
+                  data-placement="top"
+                  title="Halaman beranda"
+                  ><i class="fa-solid fa-house-chimney"></i> Home</a
+                >
+              </li>
+              <li class="nav-item px-3 px-xl-4">
+                <a
+                  class="nav-link fw-medium"
+                  aria-current="page"
+                  href="#service"
+                  data-toggle="tooltip"
+                  data-placement="top"
+                  title="Daftarkan tempat wisata disekitarmu."
+                  ><i class="fa-solid fa-wrench"></i> Service</a
+                >
+              </li>
+              <li class="nav-item px-3 px-xl-4">
+                <a
+                  class="nav-link fw-medium"
+                  aria-current="page"
+                  href="#wisataPopuler"
+                  data-toggle="tooltip"
+                  data-placement="top"
+                  title="Cek tempat wisata"
+                  ><i class="fa-solid fa-map-location-dot"></i> Destinasi</a
+                >
+              </li>
+              <li class="nav-item px-3 px-xl-4">
+                <a
+                  class="nav-link fw-medium"
+                  aria-current="page"
+                  href="#kontak"
+                  data-toggle="tooltip"
+                  data-placement="top"
+                  title="Kontak kami"
+                  ><i class="fa-solid fa-phone"></i> Kontak</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <section style="padding-top: 7rem">
+        <div
+          class="bg-holder"
+          style="background-image: url(app/assets/img/hero/hero-bg.svg)"
+        ></div>
+        <div class="container">
+          <div class="row align-items-top">
+            <div class="col-md-5 col-lg-6 order-0 order-md-1 text-end">
+              <img
+                class="img-mobile pt-7 pt-md-0 hero-img"
+                src="app/assets/img/hero/Hero1.png"
+                alt="hero-header"
+              />
+              <img
+                class="img-desktop pt-7 pt-md-0 hero-img"
+                src="app/assets/img/hero/Hero2.png"
+                alt="hero-header"
+              />
+            </div>
+            <div
+              class="col-md-7 col-lg-6 text-md-start text-center py-6 mt-lg-5"
+            >
+              <h1 class="hero-title mb-3">
+                Ingin pergi ke mana kamu hari ini?
+              </h1>
+              <p class="mb-4 fw-medium text-danger">
+                Yuk, kunjungi tempat wisata terbaik di Indonesia.
+              </p>
+              <div class="text-center text-md-start">
+                <a
+                  class="btn btn-primary btn-lg me-md-4 mb-3 mb-md-0 border-0 primary-btn-shadow"
+                  data-toggle="tooltip"
+                  data-placement="top"
+                  title="Cek tempat wisata."
+                  href="#wisataPopuler"
+                  role="button"
+                  >Lihat Sekarang</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="pt-5 pt-md-9" id="service">
+        <div class="container">
+          <div class="position-absolute z-index--1 end-0 d-none d-lg-block">
+            <img
+              src="app/assets/img/category/shape.svg"
+              style="max-width: 200px"
+              alt="service"
+            />
+          </div>
+          <div class="mb-7 text-center">
+            <h5 class="text-secondary">Service</h5>
+            <h3
+              class="fs-xl-10 fs-lg-8 fs-7 fw-bold font-cursive text-capitalize"
+            >
+              Ingin Promosi Tempat Wisata?
+            </h3>
+          </div>
+          <div class="row">
+            <div class="col-lg-3 col-sm-6 mb-6">
+              <div class="card rounded-3 text-center align-items-center">
+                <div class="card-body p-xxl-5 p-4">
+                  <img
+                    src="app/assets/img/category/Telpon.png"
+                    width="75"
+                    alt="Service"
+                  />
+                  <h4 class="mb-3">Hubungi Kami</h4>
+                  <p class="mb-0 fw-medium">
+                    Hubungi Kami melalui kontak yang sudah tersedia.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-sm-6 mb-6">
+              <div class="card rounded-3 text-center align-items-center">
+                <div class="card-body p-xxl-5 p-4">
+                  <img
+                    src="app/assets/img/category/Form.png"
+                    width="75"
+                    alt="Service"
+                  />
+                  <h4 class="mb-3">Isi Formulir</h4>
+                  <p class="mb-0 fw-medium">
+                    Isi formulir sesuai data yang dibutuhkan.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-sm-6 mb-6">
+              <div class="card rounded-3 text-center align-items-center">
+                <div class="card-body p-xxl-5 p-4">
+                  <img
+                    src="app/assets/img/category/Tagprice.png"
+                    width="75"
+                    alt="Service"
+                  />
+                  <h4 class="mb-3">Pilih Paket</h4>
+                  <p class="mb-0 fw-medium">
+                    Pilih varian paket promosi yang kami tawarkan.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-sm-6 mb-6">
+              <div class="card rounded-3 text-center align-items-center">
+                <div class="card-body p-xxl-5 p-4">
+                  <img
+                    src="app/assets/img/category/Money.png"
+                    width="75"
+                    alt="Service"
+                  />
+                  <h4 class="mb-3">Pembayaran</h4>
+                  <p class="mb-0 fw-medium">
+                    Lakukan pembayaran sesuai dengan jumlah nominal tagihan.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="pt-4" id="wisataPopuler">
+        <div class="container">
+          <div
+            class="position-absolute start-100 bottom-0 translate-middle-x d-none d-xl-block ms-xl-n4"
+          >
+            <img src="app/assets/img/dest/shape.svg" alt="destination" />
+          </div>
+          <div class="mb-7 text-center">
+            <h5 class="text-secondary">Tempat Wisata</h5>
+            <h3
+              class="fs-xl-10 fs-lg-8 fs-7 fw-bold font-cursive text-capitalize"
+            >
+              Paling Populer
+            </h3>
+          </div>
+          <div class="row">
+            <div class="col-md-4 mb-4">
+              <div class="card overflow-hidden shadow zoom">
+                <img
+                  class="card-img-top"
+                  src="app/assets/img/dest/Pura-Besakih.jpg"
+                  alt="Pura Agung Besakih"
+                />
+                <div class="card-body py-4 px-3">
+                  <div
+                    class="d-flex flex-column flex-lg-row justify-content-between mb-3"
+                  >
+                    <h4 class="text-secondary fw-medium">Pura Agung Besakih</h4>
+                    <span style="z-index: 99; cursor: pointer"
+                      ><a
+                        href=""
+                        data-bs-toggle="modal"
+                        data-bs-target="#modal1"
+                        style="text-decoration: none"
+                        >Lihat Detail</a
+                      ></span
+                    >
+                  </div>
+                  <div class="d-flex align-items-center">
+                    <span class="fs-0 fw-medium"
+                      ><i class="fa-solid fa-location-dot"></i> Bali, Jawa
+                      Timur</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 mb-4">
+              <div class="card overflow-hidden shadow zoom">
+                <img
+                  class="card-img-top"
+                  src="app/assets/img/dest/Pantai-Kartini.jpg"
+                  alt="Pantai Kartini"
+                />
+                <div class="card-body py-4 px-3">
+                  <div
+                    class="d-flex flex-column flex-lg-row justify-content-between mb-3"
+                  >
+                    <h4 class="text-secondary fw-medium">Pantai Kartini</h4>
+                    <span style="z-index: 99; cursor: pointer"
+                      ><a
+                        href=""
+                        data-bs-toggle="modal"
+                        data-bs-target="#modal2"
+                        style="text-decoration: none"
+                        >Lihat Detail</a
+                      ></span
+                    >
+                  </div>
+                  <div class="d-flex align-items-center">
+                    <span class="fs-0 fw-medium"
+                      ><i class="fa-solid fa-location-dot"></i> Jepara, Jawa
+                      Tengah</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 mb-4">
+              <div class="card overflow-hidden shadow zoom">
+                <img
+                  class="card-img-top"
+                  src="app/assets/img/dest/Candi-Prambanan.jpg"
+                  alt="Candi Prambanan"
+                />
+                <div class="card-body py-4 px-3">
+                  <div
+                    class="d-flex flex-column flex-lg-row justify-content-between mb-3"
+                  >
+                    <h4 class="text-secondary fw-medium">Candi Prambanan</h4>
+                    <span style="z-index: 99; cursor: pointer"
+                      ><a
+                        href=""
+                        data-bs-toggle="modal"
+                        data-bs-target="#modal3"
+                        style="text-decoration: none"
+                        >Lihat Detail</a
+                      ></span
+                    >
+                  </div>
+                  <div class="d-flex align-items-center">
+                    <span class="fs-0 fw-medium"
+                      ><i class="fa-solid fa-location-dot"></i> Yogyakarta, Jawa
+                      Tengah</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="pt-4" id="wisataTerbaru">
+        <div class="container">
+          <div
+            class="position-absolute start-100 bottom-0 translate-middle-x d-none d-xl-block ms-xl-n4"
+          >
+            <img src="app/assets/img/dest/shape.svg" alt="destination" />
+          </div>
+          <div class="mb-7 text-center">
+            <h5 class="text-secondary">Tempat Wisata</h5>
+            <h3
+              class="fs-xl-10 fs-lg-8 fs-7 fw-bold font-cursive text-capitalize"
+            >
+              Terbaru
+            </h3>
+          </div>
+          <div class="row">
+            <div class="col-md-4 mb-4">
+              <div class="card overflow-hidden shadow zoom">
+                <img
+                  class="card-img-top"
+                  src="app/assets/img/dest/Gunung-Rinjani.jpg"
+                  alt="Gunung Rinjani"
+                />
+                <div class="card-body py-4 px-3">
+                  <div
+                    class="d-flex flex-column flex-lg-row justify-content-between mb-3"
+                  >
+                    <h4 class="text-secondary fw-medium">Gunung Rinjani</h4>
+                    <span style="z-index: 99; cursor: pointer"
+                      ><a
+                        href=""
+                        data-bs-toggle="modal"
+                        data-bs-target="#modal4"
+                        style="text-decoration: none"
+                        >Lihat Detail</a
+                      ></span
+                    >
+                  </div>
+                  <div class="d-flex align-items-center">
+                    <span class="fs-0 fw-medium"
+                      ><i class="fa-solid fa-location-dot"></i> Pulau Lombok,
+                      Nusa Tenggara Barat</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 mb-4">
+              <div class="card overflow-hidden shadow zoom">
+                <img
+                  class="card-img-top"
+                  src="app/assets/img/dest/Kepulauan-Derawan.jpg"
+                  alt="Kepulauan Derawan"
+                />
+                <div class="card-body py-4 px-3">
+                  <div
+                    class="d-flex flex-column flex-lg-row justify-content-between mb-3"
+                  >
+                    <h4 class="text-secondary fw-medium">Kepulauan Derawan</h4>
+                    <span style="z-index: 99; cursor: pointer"
+                      ><a
+                        href=""
+                        data-bs-toggle="modal"
+                        data-bs-target="#modal5"
+                        style="text-decoration: none"
+                        >Lihat Detail</a
+                      ></span
+                    >
+                  </div>
+                  <div class="d-flex align-items-center">
+                    <span class="fs-0 fw-medium"
+                      ><i class="fa-solid fa-location-dot"></i> Berau,
+                      Kalimantan Timur.</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 mb-4">
+              <div class="card overflow-hidden shadow zoom">
+                <img
+                  class="card-img-top"
+                  src="app/assets/img/dest/Pantai-Parai-Tenggiri.jpg"
+                  alt="Pantai Parai Tenggiri"
+                />
+                <div class="card-body py-4 px-3">
+                  <div
+                    class="d-flex flex-column flex-lg-row justify-content-between mb-3"
+                  >
+                    <h4 class="text-secondary fw-medium">
+                      Pantai Parai Tenggiri
+                    </h4>
+                    <span style="z-index: 99; cursor: pointer"
+                      ><a
+                        href=""
+                        data-bs-toggle="modal"
+                        data-bs-target="#modal6"
+                        style="text-decoration: none"
+                        >Lihat Detail</a
+                      ></span
+                    >
+                  </div>
+                  <div class="d-flex align-items-center">
+                    <span class="fs-0 fw-medium"
+                      ><i class="fa-solid fa-location-dot"></i> Bangka,
+                      Kepulauan Bangka Belitung</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row mt-lg-2">
+            <div class="col-md-4 mb-4">
+              <div class="card overflow-hidden shadow zoom">
+                <img
+                  class="card-img-top"
+                  src="app/assets/img/dest/Karimun-Jawa.jpg"
+                  alt="Karimun Jawa"
+                />
+                <div class="card-body py-4 px-3">
+                  <div
+                    class="d-flex flex-column flex-lg-row justify-content-between mb-3"
+                  >
+                    <h4 class="text-secondary fw-medium">Karimunjawa</h4>
+                    <span style="z-index: 99; cursor: pointer"
+                      ><a
+                        href=""
+                        data-bs-toggle="modal"
+                        data-bs-target="#modal7"
+                        style="text-decoration: none"
+                        >Lihat Detail</a
+                      ></span
+                    >
+                  </div>
+                  <div class="d-flex align-items-center">
+                    <span class="fs-0 fw-medium"
+                      ><i class="fa-solid fa-location-dot"></i> Jepara, Jawa
+                      Tengah</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 mb-4">
+              <div class="card overflow-hidden shadow zoom">
+                <img
+                  class="card-img-top"
+                  src="app/assets/img/dest/Kota-Lama.jpg"
+                  alt="Kota Lama"
+                />
+                <div class="card-body py-4 px-3">
+                  <div
+                    class="d-flex flex-column flex-lg-row justify-content-between mb-3"
+                  >
+                    <h4 class="text-secondary fw-medium">Kota Lama</h4>
+                    <span style="z-index: 99; cursor: pointer"
+                      ><a
+                        href=""
+                        data-bs-toggle="modal"
+                        data-bs-target="#modal8"
+                        style="text-decoration: none"
+                        >Lihat Detail</a
+                      ></span
+                    >
+                  </div>
+                  <div class="d-flex align-items-center">
+                    <span class="fs-0 fw-medium"
+                      ><i class="fa-solid fa-location-dot"></i> Semarang, Jawa
+                      Tengah.</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 mb-4">
+              <div class="card overflow-hidden shadow zoom">
+                <img
+                  class="card-img-top"
+                  src="app/assets/img/dest/Lawang-Sewu.jpg"
+                  alt="Lawang Sewu"
+                />
+                <div class="card-body py-4 px-3">
+                  <div
+                    class="d-flex flex-column flex-lg-row justify-content-between mb-3"
+                  >
+                    <h4 class="text-secondary fw-medium">Lawang Sewu</h4>
+                    <span style="z-index: 99; cursor: pointer"
+                      ><a
+                        href=""
+                        data-bs-toggle="modal"
+                        data-bs-target="#modal9"
+                        style="text-decoration: none"
+                        >Lihat Detail</a
+                      ></span
+                    >
+                  </div>
+                  <div class="d-flex align-items-center">
+                    <span class="fs-0 fw-medium"
+                      ><i class="fa-solid fa-location-dot"></i> Semarang, Jawa
+                      Tengah</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Untuk Detail -->
+
+      <!-- Detail 1 -->
+      <div
+        class="modal fade"
+        id="modal1"
+        data-bs-backdrop="static"
+        data-bs-keyboard="false"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+        style="background-color: rgba(0, 0, 0, 0.7)"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content rounded">
+            <div class="modal-header border-0">
+              <h1 class="modal-title fs-4" id="exampleModalLabel">
+                Pura Agung Besakih
+              </h1>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body border-bottom" style="margin-top: -15px">
+              Pura Agung Besakih atau Mother Temple of Bali merupakan pura
+              terbesar dan menjadi pusat kegiatan seluruh umat Hindu di Bali.
+              Lokasinya di Desa Besakih, Kecamatan Rendang, Kabupaten
+              Karangasem.<br /><br />
+              Desa itu dianggap suci karena letaknya yang tinggi. Pura Besakih
+              terdiri atas satu pura pusat yang disebut Pura Penataran Agung
+              Besakih dan 18 pura pendamping, yaitu satu Pura Basukian dan 17
+              pura lainnya.<br /><br />
+              Pura Agung Besakih di Bali sudah terkenal sampai ke mancanegara,
+              begitu banyak wisatawan asing atau domestik yang berwisata ke
+              tempat ini. Saking besarnya Pura ini, Pura Agung Besakih mendapat
+              nama sebagai ibunya dari Pura di Bali.
+            </div>
+            <div class="row modal-footer border-0">
+              <div class="col">
+                <a
+                  href="https://goo.gl/maps/CL1C1KthJeZs3BP86"
+                  target="_blank"
+                  data-toggle="tooltip"
+                  data-placement="top"
+                  title="Buka Google Maps Pura Agung Besakih."
+                  ><i class="fs-7 fa-solid fa-map-location-dot"></i
+                ></a>
+              </div>
+              <div class="col d-flex justify-content-end">
+                <button
+                  type="button"
+                  class="btn btn-warning"
+                  data-bs-dismiss="modal"
+                >
+                  Close
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Detail 2 -->
+      <div
+        class="modal fade"
+        id="modal2"
+        data-bs-backdrop="static"
+        data-bs-keyboard="false"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+        style="background-color: rgba(0, 0, 0, 0.7)"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content rounded">
+            <div class="modal-header border-0">
+              <h1 class="modal-title fs-4" id="exampleModalLabel">
+                Pantai Kartini
+              </h1>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body border-bottom" style="margin-top: -15px">
+              Pantai Kartini adalah objek wisata pantai di Desa Bulu, Jepara,
+              Jawa Tengah. Pantai Kartini terletak 2,5 km arah barat dari
+              pendopo Kantor Bupati Jepara. Kawasan dengan luas lahan 3,5 ha ini
+              merupakan kawasan yang strategis karena sebagai jalur transportasi
+              laut menuju objek wisata Taman laut Nasional Karimunjawa dan Pulau
+              Panjang.<br /><br />
+              Selain itu, Pantai Kartini juga tidak bisa lepas dari suatu acara
+              tradisional yang disebut “Lomban”. Acara ini merupakan acara
+              budaya masyarakat Jepara yang berlangsung selama 1 hari tepatnya
+              pada tanggal 8 Syawal atau seminggu setelah Hari Raya Idul
+              Fitri.<br /><br />Pantai Kartini disebut juga "pemandian" yang
+              terletak di bagian barat Pantai Kartini karena pada awalnya
+              digunakan sebagai pemandian yang dipercayai masyarakat dapat
+              menyembuhkan penyakit rematik, dan gatal-gatal.
+            </div>
+            <div class="row modal-footer border-0">
+              <div class="col">
+                <a
+                  href="https://goo.gl/maps/8H7xxayantgnSRzx9"
+                  target="_blank"
+                  data-toggle="tooltip"
+                  data-placement="top"
+                  title="Buka Google Maps Pantai Kartini."
+                  ><i class="fs-7 fa-solid fa-map-location-dot"></i
+                ></a>
+              </div>
+              <div class="col d-flex justify-content-end">
+                <button
+                  type="button"
+                  class="btn btn-warning"
+                  data-bs-dismiss="modal"
+                >
+                  Close
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Detail 3 -->
+      <div
+        class="modal fade"
+        id="modal3"
+        data-bs-backdrop="static"
+        data-bs-keyboard="false"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+        style="background-color: rgba(0, 0, 0, 0.7)"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content rounded">
+            <div class="modal-header border-0">
+              <h1 class="modal-title fs-4" id="exampleModalLabel">
+                Candi Prambanan
+              </h1>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body border-bottom" style="margin-top: -15px">
+              Wisata di Yogyakarta yang juga dikenal dengan nama Candi Roro
+              Jonggrang ini merupakan candi Hindu terbesar di Indonesia dan juga
+              termasuk dalam Situs Warisan Dunia UNESCO. Terletak di perbatasan
+              Yogyakarta dan Jawa Tengah, tidak terlalu jauh dari Candi
+              Borobudur, Candi Prambanan didedikasikan untuk para Dewa Hindu;
+              Siwa, Wisnu, dan Brahma.<br /><br />Jika ditilik dari sejarah,
+              Candi Prambanan dibangun sekitar tahun 850 masehi. Wisata Jogja
+              ini memiliki candi utama, yaitu Candi Siwa, dengan tinggi mencapai
+              47 meter yang terletek di tengah kompleks candi-candi yang lebih
+              kecil. Terdapat total 240 candi besar dan kecil di kompleks Candi
+              Prambanan, tetapi kini hanya tersisa 18 candi.
+            </div>
+            <div class="row modal-footer border-0">
+              <div class="col">
+                <a
+                  href="https://goo.gl/maps/nhNGkeGGFuQjVi6J7"
+                  target="_blank"
+                  data-toggle="tooltip"
+                  data-placement="top"
+                  title="Buka Google Maps Candi Prambanan."
+                  ><i class="fs-7 fa-solid fa-map-location-dot"></i
+                ></a>
+              </div>
+              <div class="col d-flex justify-content-end">
+                <button
+                  type="button"
+                  class="btn btn-warning"
+                  data-bs-dismiss="modal"
+                >
+                  Close
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Detail 4 -->
+      <div
+        class="modal fade"
+        id="modal4"
+        data-bs-backdrop="static"
+        data-bs-keyboard="false"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+        style="background-color: rgba(0, 0, 0, 0.7)"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content rounded">
+            <div class="modal-header border-0">
+              <h1 class="modal-title fs-4" id="exampleModalLabel">
+                Gunung Rinjani
+              </h1>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body border-bottom" style="margin-top: -15px">
+              Gunung Rinjani adalah salah satu taman nasional yang ada di
+              Indonesia. Tidak hanya menyajikan pemandangan indah Gunung
+              Rinjani, Anda yang berkunjung juga bisa merasakan spot-spot wisata
+              yang ada di Taman Nasional Gunung Rinjani. Di Lombok, Gunung
+              Rinjani sangat terkenal dan memiliki berbagai macam hal menarik
+              untuk diperlihatkan kepada pelancong.<br /><br />Gunung yang
+              terletak di Lombok, Nusa Tenggara Barat ini merupakan gunung
+              berapi tertinggi kedua di Indonesia. Tingginya mencapai 3.726 m
+              dari permukaan laut. Karena keindahannya, banyak pendaki yang
+              menargetkan Gunung Rinjani sebagai tempat pendakian. Dari
+              ketinggian, Anda bisa melihat banyak pemandangan seperti danau,
+              awan rendah, langit biru, dan hamparan gunung sekitar.
+            </div>
+            <div class="row modal-footer border-0">
+              <div class="col">
+                <a
+                  href="https://goo.gl/maps/zHp8HGtP6UkpdL7p8"
+                  target="_blank"
+                  data-toggle="tooltip"
+                  data-placement="top"
+                  title="Buka Google Maps Gunung Rinjani."
+                  ><i class="fs-7 fa-solid fa-map-location-dot"></i
+                ></a>
+              </div>
+              <div class="col d-flex justify-content-end">
+                <button
+                  type="button"
+                  class="btn btn-warning"
+                  data-bs-dismiss="modal"
+                >
+                  Close
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Detail 5 -->
+      <div
+        class="modal fade"
+        id="modal5"
+        data-bs-backdrop="static"
+        data-bs-keyboard="false"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+        style="background-color: rgba(0, 0, 0, 0.7)"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content rounded">
+            <div class="modal-header border-0">
+              <h1 class="modal-title fs-4" id="exampleModalLabel">
+                Kepulauan Derawan
+              </h1>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body border-bottom" style="margin-top: -15px">
+              Kepulauan Derawan adalah sebuah kepulauan yang berada di Kabupaten
+              Berau, Kalimantan Timur. Di kepulauan ini terdapat sejumlah objek
+              wisata bahari menawan, salah satunya Taman Bawah Laut yang
+              diminati wisatawan mancanegara terutama para penyelam kelas
+              dunia.<br /><br />Kepulauan Derawan memiliki tiga kecamatan yaitu,
+              Pulau Derawan, Maratua, dan Biduk Biduk, Berau. Sedikitnya ada
+              empat pulau yang terkenal di kepulauan tersebut, yakni Pulau
+              Maratua, Derawan, Sangalaki, dan Kakaban yang ditinggali satwa
+              langka penyu hijau dan penyu sisik.<br /><br />Secara geografis,
+              terletak di semenanjung utara perairan laut Kabupaten Berau yang
+              terdiri dari beberapa pulau yaitu Pulau Panjang, Pulau Raburabu,
+              Pulau Samama, Pulau Sangalaki, Pulau Kakaban, Pulau Nabuko, Pulau
+              Maratua dan Pulau Derawan serta beberapa gosong karang seperti
+              gosong Muaras, gosong Pinaka, gosong Buliulin, gosong Masimbung,
+              dan gosong Tababinga.
+            </div>
+            <div class="row modal-footer border-0">
+              <div class="col">
+                <a
+                  href="https://goo.gl/maps/CbkY7gK4xHXEMhWs9"
+                  target="_blank"
+                  data-toggle="tooltip"
+                  data-placement="top"
+                  title="Buka Google Maps Kepulauan Derawan."
+                  ><i class="fs-7 fa-solid fa-map-location-dot"></i
+                ></a>
+              </div>
+              <div class="col d-flex justify-content-end">
+                <button
+                  type="button"
+                  class="btn btn-warning"
+                  data-bs-dismiss="modal"
+                >
+                  Close
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Detail 6 -->
+      <div
+        class="modal fade"
+        id="modal6"
+        data-bs-backdrop="static"
+        data-bs-keyboard="false"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+        style="background-color: rgba(0, 0, 0, 0.7)"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content rounded">
+            <div class="modal-header border-0">
+              <h1 class="modal-title fs-4" id="exampleModalLabel">
+                Pantai Parai Tenggiri
+              </h1>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body border-bottom" style="margin-top: -15px">
+              Pantai Parai Tenggiri adalah salah satu objek wisata yang terletak
+              di Kecamatan Sungai Liat, Kabupaten Bangka, Kepulauan Bangka
+              Belitung. Tepatnya berada di Desa Sinar Baru yang kira-kira
+              berjarak 30 kilometer di sebelah utara kota Pangkalpinang. Pantai
+              ini memiliki kontur tanah yang landai dengan ombak yang relatif
+              kecil. Pantai ini merupakan pantai andalan yang ada di kepulauan
+              Bangka Belitung.<br /><br />Pantai Parai Tenggiri memiliki
+              hamparan pasir putih yang masih bersih dan batu-batu granit yang
+              alami. Batu-batu tersebut mempunyai ukuran yang cukup besar dan
+              bersifat alami, sehingga makin menambah kesan eksotiknya pantai
+              ini.
+            </div>
+            <div class="row modal-footer border-0">
+              <div class="col">
+                <a
+                  href="https://goo.gl/maps/9AMFRta6Fp9k7Qxk9"
+                  target="_blank"
+                  data-toggle="tooltip"
+                  data-placement="top"
+                  title="Buka Google Maps Pantai Parai Tenggiri."
+                  ><i class="fs-7 fa-solid fa-map-location-dot"></i
+                ></a>
+              </div>
+              <div class="col d-flex justify-content-end">
+                <button
+                  type="button"
+                  class="btn btn-warning"
+                  data-bs-dismiss="modal"
+                >
+                  Close
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Detail 7 -->
+      <div
+        class="modal fade"
+        id="modal7"
+        data-bs-backdrop="static"
+        data-bs-keyboard="false"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+        style="background-color: rgba(0, 0, 0, 0.7)"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content rounded">
+            <div class="modal-header border-0">
+              <h1 class="modal-title fs-4" id="exampleModalLabel">
+                Karimunjawa
+              </h1>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body border-bottom" style="margin-top: -15px">
+              Karimunjawa jadi salah satu destinasi wisata yang paling diminati
+              wisatawan. Karimunjawa merupakan kepulauan di Laut Jawa yang
+              dikembangkan menjadi pesona wisata taman laut yang mulai banyak
+              digemari wisatawan lokal maupun mancanegara. Banyak tempat wisata
+              keren dan indah di Karimunjawa.<br /><br />Tidak hanya alam
+              ternyata wisata di Karimunjawa terdapat berbagai destinasi lainnya
+              seperti hutan mangrove, kebun kupu-kupu, hingga kampung bugis.
+              Kamu nggak akan kecewa apabila wisata ke Karimunjawa.
+            </div>
+            <div class="row modal-footer border-0">
+              <div class="col">
+                <a
+                  href="https://goo.gl/maps/wteiS6KBCjUoWeX79"
+                  target="_blank"
+                  data-toggle="tooltip"
+                  data-placement="top"
+                  title="Buka Google Maps Karimunjawa."
+                  ><i class="fs-7 fa-solid fa-map-location-dot"></i
+                ></a>
+              </div>
+              <div class="col d-flex justify-content-end">
+                <button
+                  type="button"
+                  class="btn btn-warning"
+                  data-bs-dismiss="modal"
+                >
+                  Close
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Detail 8 -->
+      <div
+        class="modal fade"
+        id="modal8"
+        data-bs-backdrop="static"
+        data-bs-keyboard="false"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+        style="background-color: rgba(0, 0, 0, 0.7)"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content rounded">
+            <div class="modal-header border-0">
+              <h1 class="modal-title fs-4" id="exampleModalLabel">Kota Lama</h1>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body border-bottom" style="margin-top: -15px">
+              Kota Lama merupakan sebuah kawasan cagar budaya di mana terdapat
+              gedung-gedung tua dan bersejarah peninggalan Hindia Belanda yang
+              berusia ratusan tahun. Pada masa itu, kawasan ini merupakan pusat
+              pemerintahan. Arsitektur gedung-gedungnya bergaya khas Eropa
+              dengan pintu utama dan jendela berukuran besar, elemen dekoratif,
+              dan langit-langit yang tinggi. Beberapa spot yang ramai dan
+              menarik untuk dikunjungi, antara lain Gereja Blenduk, Taman
+              Srigunting, Gedung Asuransi Jiwasraya, Gedung Bank Mandiri Mpu
+              Tantular, Rumah Akar samping Gedung Jiwasraya, Gedung Oudetrap,
+              Semarang Art Gallery, De Spiegel, Marba, dan masih banyak lagi
+              lainnya.
+            </div>
+            <div class="row modal-footer border-0">
+              <div class="col">
+                <a
+                  href="https://goo.gl/maps/Sdm7og6wsttbrtFe7"
+                  target="_blank"
+                  data-toggle="tooltip"
+                  data-placement="top"
+                  title="Buka Google Maps Kota Lama."
+                  ><i class="fs-7 fa-solid fa-map-location-dot"></i
+                ></a>
+              </div>
+              <div class="col d-flex justify-content-end">
+                <button
+                  type="button"
+                  class="btn btn-warning"
+                  data-bs-dismiss="modal"
+                >
+                  Close
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Detail 9 -->
+      <div
+        class="modal fade"
+        id="modal9"
+        data-bs-backdrop="static"
+        data-bs-keyboard="false"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+        style="background-color: rgba(0, 0, 0, 0.7)"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content rounded">
+            <div class="modal-header border-0">
+              <h1 class="modal-title fs-4" id="exampleModalLabel">
+                Lawang Sewu
+              </h1>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body border-bottom" style="margin-top: -15px">
+              Lawang Sewu sudah menjadi simbol dari Kota Semarang. Setiap orang
+              yang datang ke Ibu Kota Jawa Tengah ini biasanya menyempatkan
+              mampir ke wisata sejarah tersebut. Arsitektur bangunan yang unik
+              ditambah dengan cerita masyarakat perihal misteri tempat ini,
+              membuat banyak orang semakin penasaran. Di balik uniknya bangunan
+              khas Belanda ini, ternyata ada sejarah yang menarik untuk digali.
+            </div>
+            <div class="row modal-footer border-0">
+              <div class="col">
+                <a
+                  href="https://goo.gl/maps/H5yu6TezkqeQcdfT7"
+                  target="_blank"
+                  data-toggle="tooltip"
+                  data-placement="top"
+                  title="Buka Google Maps Lawang Sewu."
+                  ><i class="fs-7 fa-solid fa-map-location-dot"></i
+                ></a>
+              </div>
+              <div class="col d-flex justify-content-end">
+                <button
+                  type="button"
+                  class="btn btn-warning"
+                  data-bs-dismiss="modal"
+                >
+                  Close
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <section class="pt-4" id="kontak">
+        <div class="container">
+          <div
+            class="py-8 px-5 position-relative text-center"
+            style="
+              background-color: rgba(223, 215, 249, 0.199);
+              border-radius: 129px 20px 20px 20px;
+            "
+          >
+            <div
+              class="position-absolute start-100 top-0 translate-middle ms-md-n3 ms-n4 mt-3"
+            >
+              <img
+                src="app/assets/img/cta/send.png"
+                style="max-width: 70px"
+                alt="send icon"
+              />
+            </div>
+            <div class="position-absolute end-0 top-0 z-index--1">
+              <img
+                src="app/assets/img/cta/shape-bg2.png"
+                width="264"
+                alt="cta shape"
+              />
+            </div>
+            <div
+              class="position-absolute start-0 bottom-0 ms-3 z-index--1 d-none d-sm-block"
+            >
+              <img
+                src="app/assets/img/cta/shape-bg1.png"
+                style="max-width: 340px"
+                alt="cta shape"
+              />
+            </div>
+            <div class="row justify-content-center">
+              <div class="col-lg-8 col-md-10">
+                <h2 class="text-secondary lh-1-7 mb-3">Kontak Kami</h2>
+                <form
+                  onsubmit="kirimpesan()"
+                  class="row g-3 align-items-center w-lg-75 mx-auto"
+                  method="post"
+                >
+                  <div class="col-sm">
+                    <div class="input-group-icon">
+                      <input
+                        class="form-control form-little-squirrel-control mb-3"
+                        type="text"
+                        placeholder="Nama"
+                        aria-label="nama"
+                        id="nama"
+                        name="name"
+                        autocomplete="off"
+                        required
+                      />
+                      <input
+                        class="form-control form-little-squirrel-control mb-3"
+                        type="text"
+                        placeholder="Subjek"
+                        aria-label="subjek"
+                        id="subjek"
+                        name="subjek"
+                        autocomplete="off"
+                        required
+                      />
+                      <textarea
+                        class="form-control form-little-squirrel-control mb-3"
+                        placeholder="Pesan"
+                        aria-label="pesan"
+                        style="height: 10rem"
+                        id="pesan"
+                        name="textarea"
+                        required
+                        autocomplete="off"
+                      ></textarea>
+                      <div class="d-flex justify-content-end">
+                        <button
+                          type="submit"
+                          class="btn btn-danger orange-gradient-btn fs--1 col-12"
+                        >
+                          Kirim
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="pb-0 pb-lg-4">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-3 col-md-7 col-12 mb-4 mb-md-6 mb-lg-0 order-0">
+              <img
+                class="mb-2"
+                src="app/assets/img/NewLogo.png"
+                width="150"
+                alt="jadoo"
+              />
+              <p class="fs--1 text-secondary mb-0 fw-medium">
+                Platform online yang menyajikan informasi tempat wisata terbaik
+                di Indonesia.
+              </p>
+            </div>
+            <div class="col-lg-2 col-md-4 mb-4 mb-lg-0 order-lg-1 order-md-2">
+              <h4
+                class="footer-heading-color fw-bold font-sans-serif mb-3 mb-lg-4"
+              >
+                Links
+              </h4>
+              <ul class="list-unstyled mb-0">
+                <li class="mb-2">
+                  <a
+                    class="link-900 fs-1 fw-medium text-decoration-none"
+                    href="#"
+                    >Home</a
+                  >
+                </li>
+                <li class="mb-2">
+                  <a
+                    class="link-900 fs-1 fw-medium text-decoration-none"
+                    href="#service"
+                    >Service</a
+                  >
+                </li>
+                <li class="mb-2">
+                  <a
+                    class="link-900 fs-1 fw-medium text-decoration-none"
+                    href="#kontak"
+                    >Kontak</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="col-lg-2 col-md-4 mb-4 mb-lg-0 order-lg-2 order-md-3">
+              <h4
+                class="footer-heading-color fw-bold font-sans-serif mb-3 mb-lg-4"
+              >
+                Support
+              </h4>
+              <ul class="list-unstyled mb-0">
+                <li class="mb-2">
+                  <a
+                    class="link-900 fs-1 fw-medium text-decoration-none"
+                    href="#"
+                    >Help/FAQ</a
+                  >
+                </li>
+                <li class="mb-2">
+                  <a
+                    class="link-900 fs-1 fw-medium text-decoration-none"
+                    href="#!"
+                    >Informasi Wisata</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="col-lg-2 col-md-4 mb-4 mb-lg-0 order-lg-3 order-md-4">
+              <h4
+                class="footer-heading-color fw-bold font-sans-serif mb-3 mb-lg-4"
+              >
+                Lainnya
+              </h4>
+              <ul class="list-unstyled mb-0">
+                <li class="mb-2">
+                  <a
+                    class="link-900 fs-1 fw-medium text-decoration-none"
+                    href="#wisataPopuler"
+                    >Wisata Populer</a
+                  >
+                </li>
+                <li class="mb-2">
+                  <a
+                    class="link-900 fs-1 fw-medium text-decoration-none"
+                    href="#wisataTerbaru"
+                    >Wisata Terbaru</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div
+              class="col-lg-3 col-md-5 col-12 mb-4 mb-md-6 mb-lg-0 order-lg-4 order-md-1"
+            >
+              <div class="icon-group mb-4">
+                <a
+                  class="text-decoration-none icon-item shadow-social"
+                  id="facebook"
+                  href="#"
+                  ><i class="fab fa-facebook-f"> </i
+                ></a>
+                <a
+                  class="text-decoration-none icon-item shadow-social"
+                  id="instagram"
+                  href="#"
+                  ><i class="fab fa-instagram"> </i
+                ></a>
+                <a
+                  class="text-decoration-none icon-item shadow-social"
+                  id="twitter"
+                  href="#"
+                  ><i class="fab fa-twitter"> </i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="py-5 text-center">
+        <p class="mb-0 text-secondary fs--1 fw-medium">
+          &copy; 2023 BubbleMaps, All rights reserved
+        </p>
+      </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.3/dist/sweetalert2.all.min.js"></script>
+    <script>
+      function kirimpesan() {
+        const nama = document.querySelector("#nama").value;
+        const subjek = document.querySelector("#subjek").value;
+        const pesan = document.querySelector("#pesan").value;
+        const link = window.location.replace(
+          "https://wa.me/628123456789?text=Halo *Admin*,%0A%0A*Nama:* " +
+            nama +
+            "%0A*Subjek:* " +
+            subjek +
+            "%0A*Pesan:* " +
+            pesan +
+            "%0A%0A_Template by_ *BubbleMaps*"
+        );
+        return alert("Wait...");
+      }
+    </script>
+    <script src="app/vendors/@popperjs/popper.min.js"></script>
+    <script src="app/vendors/bootstrap/bootstrap.min.js"></script>
+    <script src="app/vendors/is/is.min.js"></script>
+    <script src="app/https://polyfill.io/v3/polyfill.min.js?features=window.scroll"></script>
+    <script src="app/vendors/fontawesome/all.min.js"></script>
+    <script src="app/assets/js/theme.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&amp;family=Volkhov:wght@700&amp;display=swap"
+      rel="stylesheet"
+    />
+  </body>
+</html>
