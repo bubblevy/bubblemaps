@@ -2,7 +2,7 @@
 
 ## About BubbleMaps
 
-<b>BubbleMaps</b> adalah web landing page yang didalamnya menyajikan informasi tempat wisata. Anda bisa mengubah lokasi tempat wisata sesuai dengan kebutuhan anda. Setiap tempat wisata dalam aplikasi ini terdapat menu detail yang bisa diklik, yang nantinya terdapat informasi terkait tempat wisata tersebut serta terdapat tombol maps yang otomatis akan mengarahkan anda ke tempat wisata jika diklik.
+<b>BubbleMaps</b> adalah web landing page yang didalamnya menyajikan informasi tempat wisata. Anda bisa mengubah lokasi tempat wisata sesuai dengan kebutuhan anda. Setiap tempat wisata dalam aplikasi ini terdapat menu detail yang bisa diklik, yang nantinya terdapat informasi terkait tempat wisata tersebut serta terdapat tombol maps yang otomatis akan mengarahkan anda ke Google Maps tempat wisata jika diklik.
 
 ## BubbleMaps Demo:
 
