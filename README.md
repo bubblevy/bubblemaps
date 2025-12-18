@@ -1,4 +1,4 @@
-<p align="center"><kbd><img src="https://haibubble.com/static-images/bubblemaps.png" width="100%" alt="BubbleMaps Demo"></kbd></p>
+<p align="center"><kbd><img src="https://raw.githubusercontent.com/bubblevy/bubblemaps/main/app/assets/img/demo.png" width="100%" alt="BubbleMaps Demo"></kbd></p>
 
 ## About BubbleMaps
 
